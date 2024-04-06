@@ -51,10 +51,12 @@ tcpServers.forEach((server, index) => {
     console.log(`Redirect on ${HOST} to ${OUT_HOST} from port ${IN_PORTS[index]} to ${OUT_PORTS[index]} on both TCP and UDP Started!`)
 
 })
+console.log('---Usage---')
+console.log('npm start <in_ports> <out_ports> <host> <out_host>')
 console.log('---Single port---')
 console.log(`simple example : npm start 80 8080`)
 console.log(`full example : npm start 80 8080 127.0.0.1 127.0.0.1`)
 console.log('---Multiple ports---')
 console.log(`simple example : npm start 80,81 8080,8081`)
-console.log(`full example : npm start 80,81 8080,8081 127.0.0.1,127.0.0.1`)
+console.log(`full example : npm start 80,81 8080,8081 127.0.0.1 127.0.0.1`)
 
